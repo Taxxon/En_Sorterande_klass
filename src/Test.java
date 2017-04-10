@@ -4,11 +4,14 @@
 public class Test {
     static int[] numbers = {45, 32, 128, 42, 9, 83, 52, 96, 1, 75};
     static double[] numbers2 = {12.3, 11.2, 99.2, 1.23, 33.12, 1.22, 1.24};
+    static String[] words = {"Emil", "Tilton", "Albin", "Dicklas", "Jonas", "Jonnte", "My"};
 
     public static void main(String[]arg){
-       Sortering.sortInt(numbers);
-       Sortering.printIntArray(numbers);
-       Sortering.sortDouble(numbers2);
-       Sortering.printDoubleArray(numbers2);
+       Sort.selSort(numbers);
+       Sort.printArray(numbers);
+       Sort.selSort(numbers2);
+       Sort.printArray(numbers2);
+       Sort.selSortStringLength(words);
+       Sort.printArray(words);
     }
 }
