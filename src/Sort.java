@@ -69,6 +69,7 @@ public  class Sort {
             int index = i;
             for (int j = 0; j < words.length; j++) {
                 String word = words[j];
+                // Den sorterar så att först bokstäver sen uppercase sen sist längden. 
                 if (word.compareTo(words[i]) > 0){
                     index = j;
                     // Här har jag laggt till extra kåd som tittar vilket ord som är längst om dem båda är lika stora,för att det kårtare ska haman före.
