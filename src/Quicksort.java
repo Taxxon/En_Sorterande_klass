@@ -16,13 +16,9 @@ public class Quicksort {
         //sorterar en array med quicksort
         int i = min;
         int j = max;
-        if (i == j){
-            System.out.println("Arrayen är tom");
-        }
 
-        printArray(numbers);
-        int pivot = numbers[i];
-
+        try {
+            int pivot = numbers[i+(j - i)/2];
             while (i <= j) {
                 while (numbers[j] > pivot) {
                     j--;
@@ -36,6 +32,10 @@ public class Quicksort {
                     j--;
                 }
             }
+            printArray(numbers);
+        } catch (ArrayIndexOutOfBoundsException a){
+            System.out.println("\n" + "Arrayen är tom");
+        }
         // börjar om qiucksort på de värden som inte är på rätt plats
         if (min < j){
             quicksort(min, j);

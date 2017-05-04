@@ -13,7 +13,7 @@ public class Test {
     static int[] numbers4 = {};
 
     //artays för Quicksort
-    static int[] numbers5 = {2,157,3,4,8,22,6,1,44};
+    static int[] numbers5 = {2,157,3,4,8,22,6,1,44,124,12,5};
     static int[] numbers6 ={};
     static int[] numbers7 = {};
 
