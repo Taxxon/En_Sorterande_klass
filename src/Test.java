@@ -12,6 +12,11 @@ public class Test {
     static int[] numbers3 = {0,0,0,0};
     static int[] numbers4 = {};
 
+    //artays för Quicksort
+    static int[] numbers5 = {2,157,3,4,8,22,6,1,44};
+    static int[] numbers6 ={};
+    static int[] numbers7 = {};
+
     public static void main(String[]arg){
         // test Sort
        Sort.selSort(numbers);
@@ -24,13 +29,18 @@ public class Test {
        Sort.printArray(words);
        Sort.selSortStringAlpha(words2);
        Sort.printArray(words2);
+       System.out.println("Test Sort klar" + "\n");
 
        //test Binär_sökning
        Binär_sökning.BinarySearch(numbers, 42);
        System.out.println(numbers[3]);
        Binär_sökning.BinarySearch(numbers3, 1);
        Binär_sökning.BinarySearch(numbers4, 12);
+       System.out.println("Test Binär sökning klar" + "\n");
 
+       //test Quicksort
+        Quicksort.sort(numbers5);
+        Quicksort.sort(numbers6);
 
 
     }
